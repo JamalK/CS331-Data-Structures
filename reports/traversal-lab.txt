@@ -1,0 +1,190 @@
+Lab report for Traversal Lab - jkharrat
+Timestamp: 2013-11-22 16:17:35
+
+|  :scenario |                                            :title |                                   :result | :score |
+|------------+---------------------------------------------------+-------------------------------------------+--------|
+|    working |             Test student code vs instructor tests |                                      Fail |     27 |
+| qualifying |             Test student tests vs instructor code |                                      Pass |      5 |
+|    broke-1 |                    Preorder swaps left and right. |      Pass: Student tests detected errors. |      5 |
+|    broke-2 |                          Preorder drops elements. |      Pass: Student tests detected errors. |      5 |
+|    broke-3 |                          Postorder does preorder. |      Pass: Student tests detected errors. |      5 |
+|    broke-4 |                   Postorder swaps left and right. |      Pass: Student tests detected errors. |      5 |
+|    broke-5 |                                Inorder backwards. |      Pass: Student tests detected errors. |      5 |
+|    broke-6 |                            Inorder does preorder. |      Pass: Student tests detected errors. |      5 |
+|    broke-7 |                Level order does right side twice. | Fail: Student tests did not detect error. |      0 |
+|    broke-8 |                           Level order omits root. | Fail: Student tests did not detect error. |      0 |
+|    broke-9 |                Frontier includes one-child nodes. | Fail: Student tests did not detect error. |      0 |
+|   broke-10 | Frontier omits leaves instead of everything else. | Fail: Student tests did not detect error. |      0 |
+|      total |                                       Total Score |                                           |     62 |
+
+Details:
+
+
+** Details for Test student code vs instructor tests
+
+.........FFFFFF
+
+Failures:
+
+  1) Levelorder traversals returns empty for empty trees.
+     Expected: ()
+          got: nil (using =)
+     /home/grader/quarry/traversal-lab/jkharrat/running/spec/traversals/core_spec.clj:41
+
+  2) Levelorder traversals works for balanced trees.
+     Expected: (4 2 6 1 3 5 7)
+          got: nil (using =)
+     /home/grader/quarry/traversal-lab/jkharrat/running/spec/traversals/core_spec.clj:43
+
+  3) Levelorder traversals works for spindly trees.
+     Expected: (7 4 10 3 6 9 11 1 5 8 12 2 13)
+          got: nil (using =)
+     /home/grader/quarry/traversal-lab/jkharrat/running/spec/traversals/core_spec.clj:45
+
+  4) Frontier traversals returns empty for empty trees.
+     Expected: ()
+          got: nil (using =)
+     /home/grader/quarry/traversal-lab/jkharrat/running/spec/traversals/core_spec.clj:49
+
+  5) Frontier traversals works for balanced trees.
+     Expected: (1 3 5 7)
+          got: nil (using =)
+     /home/grader/quarry/traversal-lab/jkharrat/running/spec/traversals/core_spec.clj:51
+
+  6) Frontier traversals works for spindly trees.
+     Expected: (2 5 8 13)
+          got: nil (using =)
+     /home/grader/quarry/traversal-lab/jkharrat/running/spec/traversals/core_spec.clj:53
+
+Finished in 0.10453 seconds
+15 examples, 6 failures
+
+
+** Details for Test student tests vs instructor code
+
+...
+
+Finished in 0.00085 seconds
+3 examples, 0 failures
+
+
+** Details for Preorder swaps left and right.
+
+F..
+
+Failures:
+
+  1) Preorder Should return elements in the correct order.
+     Expected: (4 2 1 3 6 5 7)
+          got: (4 6 7 5 2 3 1) (using =)
+     /home/grader/quarry/traversal-lab/jkharrat/running/spec/traversals/core_spec.clj:15
+
+Finished in 0.10364 seconds
+3 examples, 1 failures
+
+
+** Details for Preorder drops elements.
+
+F..
+
+Failures:
+
+  1) Preorder Should return elements in the correct order.
+     Expected: (4 2 1 3 6 5 7)
+          got: (4 6 7) (using =)
+     /home/grader/quarry/traversal-lab/jkharrat/running/spec/traversals/core_spec.clj:15
+
+Finished in 0.07607 seconds
+3 examples, 1 failures
+
+
+** Details for Postorder does preorder.
+
+.F.
+
+Failures:
+
+  1) Postorder should return elements in correct order.
+     Expected: (1 3 2 5 7 6 4)
+          got: (4 2 1 3 6 5 7) (using =)
+     /home/grader/quarry/traversal-lab/jkharrat/running/spec/traversals/core_spec.clj:20
+
+Finished in 0.08680 seconds
+3 examples, 1 failures
+
+
+** Details for Postorder swaps left and right.
+
+.F.
+
+Failures:
+
+  1) Postorder should return elements in correct order.
+     Expected: (1 3 2 5 7 6 4)
+          got: (7 5 6 3 1 2 4) (using =)
+     /home/grader/quarry/traversal-lab/jkharrat/running/spec/traversals/core_spec.clj:20
+
+Finished in 0.08788 seconds
+3 examples, 1 failures
+
+
+** Details for Inorder backwards.
+
+..F
+
+Failures:
+
+  1) Inorder Should return elements in correct order
+     Expected: (1 2 3 4 5 6 7)
+          got: (7 6 5 4 3 2 1) (using =)
+     /home/grader/quarry/traversal-lab/jkharrat/running/spec/traversals/core_spec.clj:24
+
+Finished in 0.09111 seconds
+3 examples, 1 failures
+
+
+** Details for Inorder does preorder.
+
+..F
+
+Failures:
+
+  1) Inorder Should return elements in correct order
+     Expected: (1 2 3 4 5 6 7)
+          got: (4 2 1 3 6 5 7) (using =)
+     /home/grader/quarry/traversal-lab/jkharrat/running/spec/traversals/core_spec.clj:24
+
+Finished in 0.09255 seconds
+3 examples, 1 failures
+
+
+** Details for Level order does right side twice.
+
+...
+
+Finished in 0.00081 seconds
+3 examples, 0 failures
+
+
+** Details for Level order omits root.
+
+...
+
+Finished in 0.00060 seconds
+3 examples, 0 failures
+
+
+** Details for Frontier includes one-child nodes.
+
+...
+
+Finished in 0.00071 seconds
+3 examples, 0 failures
+
+
+** Details for Frontier omits leaves instead of everything else.
+
+...
+
+Finished in 0.00078 seconds
+3 examples, 0 failures

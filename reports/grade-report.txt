@@ -1,0 +1,18 @@
+Grade Report for Jamal E. Kharrat
+Produced 2013-11-06 15:07
+Netid: jkharrat cwid: A20298734
+Course: cs331 (2013-08)  Section: 01
+
+              Assignment Status Raw Max    Norm Weight  Points 
+------------------------ ------ --- --- ------- ------ ------- 
+             Exam 1 (v1)    n/a   0  66   0.00% 0.0000  0.0000 
+             Exam 1 (v2) Graded  53  66  80.30% 0.7500 60.2273 
+         Linked List Lab Graded  90 100  90.00% 0.0500  4.5000 
+         Stack Queue Lab Graded  95 100  95.00% 0.0500  4.7500 
+  Doubly Linked List Lab Graded  43 100  43.00% 0.0500  2.1500 
+        Clojure Activity Graded   1   1 100.00% 0.0250  2.5000 
+         Record Activity Graded   1   1 100.00% 0.0250  2.5000 
+      Recursion Activity Graded   1   1 100.00% 0.0250  2.5000 
+Immutable Lists Activity Graded   1   1 100.00% 0.0250  2.5000 
+------------------------ ------ --- --- ------- ------ ------- 
+                   Total                 81.63% 1.0000 81.6273 

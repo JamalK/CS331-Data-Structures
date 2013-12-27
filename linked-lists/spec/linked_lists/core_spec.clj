@@ -138,7 +138,7 @@
 (describe "efficient-delete"
           (it "should return the same list if it can't find the element"
               (let [xx (Cons. 10 (Cons. 20. (Cons. 30 nil)))]
-                (should (identical? xx (efficient-delete 40 xx)))))
+                (should (identical? xx (efficient-delete 45 xx)))))
 
           (it "should delete the element once."
              (let [xx (Cons. 10 (Cons. 20 (Cons. 20 nil)))]
